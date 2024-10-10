@@ -31,7 +31,7 @@ jobs:
           ${{ runner.os }}-php-
   
     - name: Set GITHUB_TOKEN
-      run: composer config --global github-oauth.github.com $GITHUB_TOKEN
+      run: composer config --global github-oauth.github.com {{ $GITHUB_TOKEN }}
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
