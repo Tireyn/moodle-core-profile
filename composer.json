@@ -8,6 +8,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/moodle/moodle.git"
-        },
+        }
     ]
 }
