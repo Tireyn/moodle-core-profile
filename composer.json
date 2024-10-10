@@ -1,5 +1,5 @@
 {
-    "name": "moodle-core-profile",
+    "name": "tireyn/core-profile",
     "description": "Testing creating Moodle artifacts with composer.",
     "type": "dev-project",
     "license": "MIT",
