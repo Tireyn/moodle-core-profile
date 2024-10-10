@@ -1,2 +1,2 @@
-# moodle43-test
-Test Build of Moodle 43
+# moodle-core-profile
+Repository to experiment and learn building Moodle with Composer and GitHub Actions.
