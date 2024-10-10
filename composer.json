@@ -1,8 +1,8 @@
 {
     "type": "dev-project",
-    "version": "4.03",
+    "version": "4.05",
     "require": {
-        "moodle/moodle": "4.3.3",
+        "moodle/moodle": "4.5.0",
     },
     "repositories": [
         {
