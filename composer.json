@@ -4,12 +4,27 @@
     "type": "dev-project",
     "license": "MIT",
     "require": {
-        "moodle/moodle": "4.5.*"
+        "moodle/moodle": "4.5.*",
+        "moodleworkplace/moodle-mod_coursecertificate": "4.4.*",
+        "moodleworkplace/moodle-tool_certificate": "4.4.*",
+        "willianmano/moodle-theme_moove": "dev-main"
     },
     "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/moodle/moodle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/moodleworkplace/moodle-mod_coursecertificate.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/moodleworkplace/moodle-tool_certificate.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/willianmano/moodle-theme_moove.git"
         }
     ]
 }
