@@ -23,6 +23,7 @@
                 "dist":{
                     "url": "https://moodle.org/plugins/download.php/33351/mod_coursecertificate_moodle45_2024100800.zip",
                     "type": "zip"
+                }
             },
             "extra": {
                 "installer-name": "coursecertificate"
@@ -37,6 +38,7 @@
                 "dist":{
                     "url": "https://moodle.org/plugins/download.php/33350/tool_certificate_moodle45_2024100800.zip",
                     "type": "zip"
+                }
             },
             "extra": {
                 "installer-name": "coursecertificate"
