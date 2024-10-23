@@ -3,6 +3,9 @@
     "description": "Testing creating Moodle artifacts with composer.",
     "type": "dev-project",
     "license": "MIT",
+    "config": {
+        "vendor-dir": "vendor/moodle/mooodle"
+    },
     "require": {
         "moodle/moodle": "4.5.*",
         "moodleworkplace/moodle-mod_coursecertificate": "2024100800",
