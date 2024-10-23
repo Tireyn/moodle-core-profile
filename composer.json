@@ -4,7 +4,7 @@
     "type": "dev-project",
     "license": "MIT",
     "config": {
-        "vendor-dir": "vendor/moodle/mooodle"
+        "vendor-dir": "vendor/moodle/moodle"
     },
     "require": {
         "moodle/moodle": "4.5.*",
