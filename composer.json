@@ -7,6 +7,7 @@
         "vendor-dir": "vendor/moodle/moodle"
     },
     "require": {
+        "composer/installers": "~2.8.0",
         "moodle/moodle": "4.5.*",
         "moodleworkplace/moodle-mod_coursecertificate": "2024100800",
         "moodleworkplace/moodle-tool_certificate": "2024100800",
