@@ -44,7 +44,7 @@ jobs:
         aws-region: us-east-1
     
     - name: Sync to S3
-      run: aws s3 sync ./vendor/moodle/ s3://moodle-artifact-bucket
+      run: aws s3 sync ./ s3://moodle-artifact-bucket
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
