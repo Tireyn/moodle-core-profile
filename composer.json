@@ -30,7 +30,10 @@
 				}
 			},
 			"extra": {
-				"installer-name": "coursecertificate"
+				"installer-name": "coursecertificate",
+				"installer-paths": {
+					"vendor/moodle/mod": ["moodleworkplace/moodle-mod_coursecertificate"]
+				}
 			}
 		},
 		{
@@ -45,7 +48,10 @@
 				}
 			},
 			"extra": {
-				"installer-name": "coursecertificate"
+				"installer-name": "coursecertificate",
+				"installer-paths": {
+					"vendor/moodle/admin/tool/": ["moodleworkplace/moodle-tool_certificate"]
+				}
 			}
 		},
 		{
