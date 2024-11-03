@@ -32,7 +32,7 @@
 			"extra": {
 				"installer-name": "coursecertificate",
 				"installer-paths": {
-					"vendor/moodle/mod": ["moodleworkplace/moodle-mod_coursecertificate"]
+					"vendor/moodle/moodle/mod": ["moodleworkplace/moodle-mod_coursecertificate"]
 				}
 			}
 		},
@@ -50,7 +50,7 @@
 			"extra": {
 				"installer-name": "coursecertificate",
 				"installer-paths": {
-					"vendor/moodle/admin/tool/": ["moodleworkplace/moodle-tool_certificate"]
+					"vendor/moodle/moodle/admin/tool/": ["moodleworkplace/moodle-tool_certificate"]
 				}
 			}
 		},
@@ -66,7 +66,10 @@
 				}
 			},
 			"extra": {
-				"installer-name": "moove"
+				"installer-name": "moove",
+				"installer-paths": {
+					"vendor/moodle/moodle/theme": ["willianmano/moodle-theme_moove"]
+				}
 			}
 		}
 	]

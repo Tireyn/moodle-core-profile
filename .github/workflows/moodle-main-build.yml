@@ -36,6 +36,9 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
+    - name: Compress Archive
+      run: composer archive vendor/moodle/moodle --format=zip
+
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v2
       with:
