@@ -33,6 +33,9 @@ jobs:
     - name: Set GITHUB_TOKEN
       run: composer config --global github-oauth.github.com ${{ secrets.ACCESS_TOKEN }}
 
+    - name: Create Project
+      run: composer create-project moodle/moodle "MOODLE_405_STABLE"
+
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
@@ -47,7 +50,7 @@ jobs:
         aws-region: us-east-1
     
     - name: Sync to S3
-      run: aws s3 sync ./moodle45.zip s3://moodle-artifact-bucket
+      run: aws s3 sync ./vendor/moodle/moodle/moodle45.zip s3://moodle-artifact-bucket
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
