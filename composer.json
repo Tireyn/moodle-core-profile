@@ -8,7 +8,6 @@
 	},
 	"require": {
 		"composer/installers": "~2.0.",
-		"moodle/moodle": "4.5.*",
 		"moodleworkplace/moodle-mod_coursecertificate": "2024100800",
 		"moodleworkplace/moodle-tool_certificate": "2024100800",
 		"willianmano/moodle-theme_moove": "2024100800"
@@ -30,10 +29,7 @@
 				}
 			},
 			"extra": {
-				"installer-name": "coursecertificate",
-				"installer-paths": {
-					"vendor/moodle/moodle/mod": ["moodleworkplace/moodle-mod_coursecertificate"]
-				}
+				"installer-name": "coursecertificate"
 			}
 		},
 		{
@@ -48,10 +44,7 @@
 				}
 			},
 			"extra": {
-				"installer-name": "coursecertificate",
-				"installer-paths": {
-					"vendor/moodle/moodle/admin/tool/": ["moodleworkplace/moodle-tool_certificate"]
-				}
+				"installer-name": "coursecertificate"
 			}
 		},
 		{
@@ -66,10 +59,7 @@
 				}
 			},
 			"extra": {
-				"installer-name": "moove",
-				"installer-paths": {
-					"vendor/moodle/moodle/theme": ["willianmano/moodle-theme_moove"]
-				}
+				"installer-name": "moove"
 			}
 		}
 	]
