@@ -34,13 +34,13 @@ jobs:
       run: composer config --global github-oauth.github.com ${{ secrets.ACCESS_TOKEN }}
 
     - name: Create Project
-      run: composer create-project moodle/moodle "MOODLE_405_STABLE"
+      run: composer create-project moodle/moodle .
 
     - name: Install dependencies
       run: composer install --prefer-dist
 
     - name: Compress Archive
-      run: composer archive --dir=MOODLE_405_STABLE/ --file=moodle45 --format=zip
+      run: composer archive --file=moodle45 --format=zip
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v2
