@@ -37,7 +37,7 @@ jobs:
       run: composer create-project moodle/moodle "MOODLE_405_STABLE"
 
     - name: Install dependencies
-      run: composer install --prefer-dist --no-progress
+      run: composer install --prefer-dist
 
     - name: Compress Archive
       run: composer archive --dir=MOODLE_405_STABLE/ --file=moodle45 --format=zip

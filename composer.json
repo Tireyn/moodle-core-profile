@@ -10,7 +10,7 @@
 		"composer/installers": "~1.0",
 		"moodleworkplace/moodle-tool_certificate": "2024100800",
 		"moodleworkplace/moodle-mod_coursecertificate": "2024100800",
-		"willianmano/moodle-theme_moove": "2024100800"
+		"willianmano/moodle-theme_moove": "dev-master"
 	},
 	"repositories": [
 		{
@@ -54,22 +54,8 @@
 			}
 		},
 		{
-			"type": "package",
-			"package": {
-				"name": "willianmano/moodle-theme_moove",
-				"type": "moodle-theme",
-				"version": "2024100800",
-				"dist": {
-					"url": "https://moodle.org/plugins/download.php/33368/theme_moove_moodle45_2024100800.zip",
-					"type": "zip"
-				}
-			},
-			"extra": {
-				"installer-name": "moove",
-				"installer-paths": {
-					"MOODLE_405_STABLE/theme": ["willianmano/moodle-theme_moove"]
-				}
-			}
+			"type": "vcs",
+			"url": "git@github.com:willianmano/moodle-theme_moove.git"
 		}
 	]
 }
