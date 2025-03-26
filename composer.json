@@ -8,54 +8,12 @@
 	},
 	"require": {
 		"composer/installers": "~1.0",
-		"moodleworkplace/moodle-tool_certificate": "2024100800",
-		"moodleworkplace/moodle-mod_coursecertificate": "2024100800",
-		"willianmano/moodle-theme_moove": "dev-master"
+		"moodle/moodle": "v4.5.3"
 	},
 	"repositories": [
 		{
 			"type": "vcs",
 			"url": "https://github.com/moodle/moodle.git"
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "moodleworkplace/moodle-tool_certificate",
-				"type": "moodle-tool",
-				"version": "2024100800",
-				"dist": {
-					"url": "https://moodle.org/plugins/download.php/33350/tool_certificate_moodle45_2024100800.zip",
-					"type": "zip"
-				}
-			},
-			"extra": {
-				"installer-name": "coursecertificate",
-				"installer-paths": {
-					"MOODLE_405_STABLE/admin/tool/": ["moodleworkplace/moodle-tool_certificate"]
-				}
-			}
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "moodleworkplace/moodle-mod_coursecertificate",
-				"type": "moodle-mod",
-				"version": "2024100800",
-				"dist": {
-					"url": "https://moodle.org/plugins/download.php/33351/mod_coursecertificate_moodle45_2024100800.zip",
-					"type": "zip"
-				}
-			},
-			"extra": {
-				"installer-name": "coursecertificate",
-				"installer-paths": {
-					"MOODLE_405_STABLE/mod": ["moodleworkplace/moodle-mod_coursecertificate"]
-				}
-			}
-		},
-		{
-			"type": "vcs",
-			"url": "git@github.com:willianmano/moodle-theme_moove.git"
 		}
 	]
 }
