@@ -33,6 +33,9 @@ jobs:
     - name: Set GITHUB_TOKEN
       run: composer config --global github-oauth.github.com ${{ secrets.ACCESS_TOKEN }}
 
+    - name: Remove Project
+      run: rm -rf .
+      
     - name: Create Project
       run: composer create-project moodle/moodle .
 
