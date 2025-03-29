@@ -55,8 +55,8 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
     
-    #- name: Sync to S3
-      #run: aws s3 sync ./moodle45.zip s3://moodle-artifact-bucket/moodle45.zip
+    - name: Copy to S3
+      run: aws s3 cp moodle45.zip s3://moodle-artifact-bucket/moodle45.zip
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
