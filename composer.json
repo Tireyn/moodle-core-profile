@@ -8,12 +8,23 @@
 	},
 	"require": {
 		"composer/installers": "~1.0",
-		"moodle/moodle": "v4.5.3"
+		"moodle/moodle": "v4.5.3",
+		"mod_certificatebeautiful": "v3.0.6"
 	},
 	"repositories": [
 		{
 			"type": "vcs",
 			"url": "https://github.com/moodle/moodle.git"
+		},
+		{
+			"type": "vcx",
+			"url": "https://github.com/EduardoKrausME/moodle-mod_certificatebeautiful.git"
 		}
-	]
+	],
+	"extra": {
+		"installer-paths": {
+            		"{$name}": ["moodle/moodle"],
+			"/moodle/mod/{$name}": ["type:moodle-mod"]
+		}
+	}
 }
