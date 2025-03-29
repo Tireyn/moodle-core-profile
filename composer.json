@@ -8,8 +8,7 @@
 	},
 	"require": {
 		"composer/installers": "~1.0",
-		"moodle/moodle": "v4.5.3",
-		"moodle-plugins/mod_certificatebeautiful": "*"
+		"moodle/moodle": "v4.5.3"
 	},
 	"repositories": [
 		{
