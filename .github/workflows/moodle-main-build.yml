@@ -43,7 +43,7 @@ jobs:
       run: composer install --prefer-dist
 
     - name: Compress Archive
-      run: composer archive --dir=./moodle/ --file=moodle45 --format=zip
+      run: composer archive --file=moodle45 --format=zip
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v2
@@ -53,7 +53,7 @@ jobs:
         aws-region: us-east-1
     
     - name: Sync to S3
-      run: aws s3 sync ./moodle/moodle45.zip s3://moodle-artifact-bucket/moodle45.zip
+      run: aws s3 sync ./moodle45.zip s3://moodle-artifact-bucket/moodle45.zip
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
