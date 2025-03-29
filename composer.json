@@ -9,7 +9,7 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"moodle/moodle": "v4.5.3",
-		"mod_certificatebeautiful": "v3.0.6"
+		"eduardokrausme/mod_certificatebeautiful": "v3.0.6"
 	},
 	"repositories": [
 		{
