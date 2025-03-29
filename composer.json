@@ -9,7 +9,7 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"moodle/moodle": "v4.5.3",
-		"eduardokrausme/mod_certificatebeautiful": "v3.0.6"
+		"moodle-plugins/mod_certificatebeautiful": "*"
 	},
 	"repositories": [
 		{
@@ -17,14 +17,26 @@
 			"url": "https://github.com/moodle/moodle.git"
 		},
 		{
-			"type": "vcs",
-			"url": "https://github.com/EduardoKrausME/moodle-mod_certificatebeautiful.git"
+			"type": "package",
+			"package": {
+				"name":"moodle-plugins/mod_certificatebeautiful",
+				"type":"moodle-mod",
+				"version":"2025032900",
+				"dist": {
+					"url":"https://github.com/EduardoKrausME/moodle-mod_certificatebeautiful/archive/refs/tags/3.0.6.zip",
+					"type":"zip"
+				},
+				"extra": {
+					"installer-name":"certificatebeautiful"
+				}
+			}
 		}
 	],
 	"extra": {
 		"installer-paths": {
             		"{$name}": ["moodle/moodle"],
-			"/moodle/mod/{$name}": ["type:moodle-mod"]
+			"/moodle/mod/{$name}": ["type:moodle-mod"],
+			"/moodle/theme/{$name}": ["type:moodle-theme"]
 		}
 	}
 }
