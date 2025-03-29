@@ -17,7 +17,7 @@
 			"url": "https://github.com/moodle/moodle.git"
 		},
 		{
-			"type": "vcx",
+			"type": "vcs",
 			"url": "https://github.com/EduardoKrausME/moodle-mod_certificatebeautiful.git"
 		}
 	],
