@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"config": {
 		"allow-plugins": true,
-		"vendor-dir": "/moodle"
+		"vendor-dir": "./moodle"
 	},
 	"require": {
 		"composer/installers": "~1.0",
