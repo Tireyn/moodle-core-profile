@@ -4,7 +4,8 @@
 	"type": "dev-project",
 	"license": "MIT",
 	"config": {
-		"allow-plugins": true
+		"allow-plugins": true,
+		"vendor-dir": "/moodle"
 	},
 	"require": {
 		"composer/installers": "~1.0",
@@ -33,7 +34,6 @@
 	],
 	"extra": {
 		"installer-paths": {
-            		"{$name}": ["moodle/moodle"],
 			"/moodle/mod/{$name}": ["type:moodle-mod"],
 			"/moodle/theme/{$name}": ["type:moodle-theme"]
 		}
