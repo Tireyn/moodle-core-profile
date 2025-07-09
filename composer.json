@@ -9,7 +9,7 @@
 	},
 	"require": {
 		"composer/installers": "~1.0",
-		"moodle/moodle": "v4.5.3"
+		"moodle/moodle": "v4.5.5"
 	},
 	"repositories": [
 		{
