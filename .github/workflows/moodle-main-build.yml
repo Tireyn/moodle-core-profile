@@ -43,7 +43,7 @@ jobs:
       run: composer install --prefer-dist
 
     - name: Compress Archive
-      run: composer archive --file=moodle45 --format=zip
+      run: composer archive --file=moodle455 --format=zip
 
     - name: Review Folder
       run: ls -la
